@@ -8,14 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        PokemonView(url: "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0")
     }
 }
 

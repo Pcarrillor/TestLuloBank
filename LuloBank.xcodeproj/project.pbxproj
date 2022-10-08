@@ -11,6 +11,12 @@
 		830384F528F0E02600F92EDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830384F428F0E02600F92EDD /* ContentView.swift */; };
 		830384F728F0E02A00F92EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830384F628F0E02A00F92EDD /* Assets.xcassets */; };
 		830384FA28F0E02A00F92EDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830384F928F0E02A00F92EDD /* Preview Assets.xcassets */; };
+		8303850128F0E47100F92EDD /* ImageLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8303850028F0E47100F92EDD /* ImageLoadingView.swift */; };
+		8303850328F0E4A600F92EDD /* lmageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8303850228F0E4A600F92EDD /* lmageLoadingViewModel.swift */; };
+		8303850528F0E72F00F92EDD /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8303850428F0E72F00F92EDD /* PokemonModel.swift */; };
+		8303850728F1B83900F92EDD /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8303850628F1B83900F92EDD /* PokemonViewModel.swift */; };
+		8303850928F1BB4E00F92EDD /* PokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8303850828F1BB4E00F92EDD /* PokemonView.swift */; };
+		8303850B28F1C2AC00F92EDD /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8303850A28F1C2AC00F92EDD /* PokemonDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		830384F428F0E02600F92EDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		830384F628F0E02A00F92EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		830384F928F0E02A00F92EDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8303850028F0E47100F92EDD /* ImageLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingView.swift; sourceTree = "<group>"; };
+		8303850228F0E4A600F92EDD /* lmageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lmageLoadingViewModel.swift; sourceTree = "<group>"; };
+		8303850428F0E72F00F92EDD /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		8303850628F1B83900F92EDD /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		8303850828F1BB4E00F92EDD /* PokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonView.swift; sourceTree = "<group>"; };
+		8303850A28F1C2AC00F92EDD /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,10 @@
 				830384F228F0E02600F92EDD /* LuloBankApp.swift */,
 				830384F428F0E02600F92EDD /* ContentView.swift */,
 				830384F628F0E02A00F92EDD /* Assets.xcassets */,
+				8303850F28F1FF7D00F92EDD /* Helpers */,
+				8303850E28F1FF7500F92EDD /* Model */,
+				8303850C28F1FF4400F92EDD /* View */,
+				8303850D28F1FF6200F92EDD /* ViewModel */,
 				830384F828F0E02A00F92EDD /* Preview Content */,
 			);
 			path = LuloBank;
@@ -65,6 +81,40 @@
 				830384F928F0E02A00F92EDD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8303850C28F1FF4400F92EDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8303850828F1BB4E00F92EDD /* PokemonView.swift */,
+				8303850A28F1C2AC00F92EDD /* PokemonDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8303850D28F1FF6200F92EDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8303850228F0E4A600F92EDD /* lmageLoadingViewModel.swift */,
+				8303850628F1B83900F92EDD /* PokemonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8303850E28F1FF7500F92EDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8303850428F0E72F00F92EDD /* PokemonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8303850F28F1FF7D00F92EDD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8303850028F0E47100F92EDD /* ImageLoadingView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8303850128F0E47100F92EDD /* ImageLoadingView.swift in Sources */,
+				8303850B28F1C2AC00F92EDD /* PokemonDetailView.swift in Sources */,
 				830384F528F0E02600F92EDD /* ContentView.swift in Sources */,
+				8303850728F1B83900F92EDD /* PokemonViewModel.swift in Sources */,
+				8303850328F0E4A600F92EDD /* lmageLoadingViewModel.swift in Sources */,
+				8303850928F1BB4E00F92EDD /* PokemonView.swift in Sources */,
+				8303850528F0E72F00F92EDD /* PokemonModel.swift in Sources */,
 				830384F328F0E02600F92EDD /* LuloBankApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -267,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LuloBank/Preview Content\"";
+				DEVELOPMENT_TEAM = 4H2AKA2B37;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -274,6 +331,8 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LuloBank/Preview Content\"";
+				DEVELOPMENT_TEAM = 4H2AKA2B37;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -302,6 +362,8 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
